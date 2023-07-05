@@ -1,6 +1,22 @@
-/* * {
+* {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
-} */
+}
 
+
+*:not(ul){
+    padding: 0;
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+span{
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid black;
+}
