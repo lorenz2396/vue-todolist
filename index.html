@@ -34,7 +34,10 @@
                         class="todo"
                         v-for="(singleTodo, i) in todos"
                         :class="singleTodo.done ? 'todo-done' : '' ">
-                        {{ singleTodo.text }}
+                        <strong @click="changeDoneProperty(i)">
+                            {{ singleTodo.text }}
+                        </strong>
+                        
                         <span @click="removeToDo(i)" >
                             X
                         </span>

@@ -40,8 +40,9 @@ createApp ({
             console.log('Cliccato su X', index);
             this.todos.splice(index, 1);
         },
-        checkTastiera(){
-            console.log(this.newTodo.text)
+        changeDoneProperty(index){
+            console.log('Cliccto su li', index)
+            this.todos[index].done = !this.todos[index].done;
         }
     },
 
